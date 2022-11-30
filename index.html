@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="icon" href="logo-icon.jpg">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,700&family=Playfair+Display+SC&family=Roboto+Slab:wght@300&display=swap"
+    rel="stylesheet">
+
+</head>
+<style>
+  #root {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .text-br {
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .text1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+  }
+
+  .text2 {
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .trailer {
+    width: 100%;
+    }
+</style>
+
+<body>
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="logbr.jpg" alt="logo" width="300" height="210"
+          class="d-inline align-text-top" style="margin-top: -30px;margin-bottom: -10px;margin-left: -80px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-weight:bold; font-size: 13px;">
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(0, 0, 0);margin-left: 20px;" aria-current="page"
+              href="index.html">HOME</a>
+          </li>
+          <li class="nav-item-">
+            <a class="nav-link" style="color: rgb(0, 0, 0);margin-left: 20px;" aria-current="page"
+              href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(0, 0, 0);margin-left: 20px; " aria-current="page"
+              href="menu.html">MENU
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(0, 0, 0);margin-left: 20px; " aria-current="page"
+              href="apps.html">DOWNLOAD
+              APPS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(0, 0, 0);margin-left: 20px; " aria-current="page"
+              href="contact.html">CONTACT
+              US
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(0, 0, 0);margin-left: 20px; " aria-current="page"
+              href="news.html">COFFEE NEWS
+            </a>
+          </li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+              style="border-color: black; margin-left: 15px;">
+            <button type="button" class="btn btn-dark" style="margin-right: 10px;" type="submit">Search</button>
+          </form>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <div class="empty_space" style="height: 15px"></div>
+
+  <video autoplay muted loop class="trailer mx-auto">
+    <source src="trailer_coffee.mp4" type="video/mp4">
+  </video>
+
+  <div class="empty_space" style="height: 35px"></div>
+
+  <div class="card text-bg-white mb-2" style="max-width: 100%; border: none;">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="barista.jpg" class="img-fluid rounded float-start rounded-5" alt="gambar barista"
+          style="max-width: 100%;height: 100%;margin-left: 50px;">
+      </div>
+      <div class="col-md-5">
+        <div class="card-body">
+
+          <h2 class="card-title"
+            style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-left: 50px;font-weight: bold;border-bottom:inset;text-align: center;">
+            Our Story</h2>
+
+          <p class="storys1 text-br" style="text-align: justify; color: black;margin-left: 50px;"> Kopi memiliki perjalanan
+            panjang
+            sebelum kita
+            nikmati. Awalnya kopi ditanam oleh petani. Saat panen petani memetik cherry kopi (buah kopi) dan
+            memisahkan bijinya dari buahnya. Ada beberapa proses yang dilakukan dalam tahap ini ada wet process, honey
+            process dan lain-lain. Setelah biji kopi dan buahnya terpisah maka biji kopi yang mentah harus dijemur
+            beberapa waktu sampai kadar airnya berada di tingkat yang telah ditentukan. Setelah itu green bean atau
+            biji kopi hijau ini dijual ke roaster (penyangrai kopi) atau perusahaan yang mengolah sendiri biji hijau
+            mereka.
+            Green bean siap disangrai (roasting) sesuai keinginan atau karakteristik bijinya oleh roaster. Tidak semua
+            biji mampu disangrai medium atau dark karena setiap biji memiliki karakteristik masing-masing. Setelah
+            disangrai maka biji kopi tersebut siap diolah barista menjadi minuman. Tetapi sebelumnya harus digiling
+            dahulu sesuai permintaan. Setelah digiling bubuk kopi siap dinikmati menjadi aneka minuman nikmat.</p>
+          <a href="about.html" style="color: black; font-size: medium; font-weight: bold;margin-left: 50px;">Read
+            More</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <img src="v601.jpg" class="storys img-fluid rounded float-end rounded-5" alt="gambar v60"
+          style="max-width: 100%;height: 100%; margin-right: 10px">
+      </div>
+    </div>
+  </div>
+
+  <div class="empty_space" style="height: 35px"></div>
+
+  <div class="text-center mx-auto" style="width: 98%;">
+    <div class="row">
+      <div>
+        <h1 style="text-align: center;margin-top:30px;margin-bottom: -30px; margin-left: -70px;">Special Drink For You
+        </h1>
+      </div>
+      <div class="empty_space" style="height: 15px"></div>
+      <div>
+        <p style="text-align:center; color: rgba(0, 0, 0, 0.425);">Anda bosan dengan menu kopi yang biasa aja?
+          <br>
+          Kami menyediakan kopi berkualitas tinggi dan minuman kopi yang menyegarkan dengan perpaduan yang cocok untuk
+          memberi kebahagian disetiap harimu.
+        </p>
+      </div>
+
+      <div class="empty_space" style="height: 50px"></div>
+
+      <div class="minuman1 col-sm-3 ">
+        <figure class="figure">
+          <img class="minuman img-fluid mx-auto float-start rounded-5" src="icecoffee.jpg" alt="" >
+          <figcaption class="figure-caption">
+            <h2 class="produk1"
+              style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              Coffee</h2>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="minuman1 col-sm-3 ">
+        <figure class="figure">
+          <img class="minuman img-fluid mx-auto rounded-5" src="moktailkopi.jpg" alt="">
+          <figcaption class="figure-caption">
+            <h2 class="produk2"
+              style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              Coffee Mocktail</h2>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="minuman1 col-sm-3 ">
+        <figure class="figure">
+          <img class="minuman img-fluid mx-auto float-end rounded-5" src="moctail.jpg" alt="">
+          <figcaption class="figure-caption">
+            <h2 class="produk3"
+              style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              Mocktail</h2>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="empty_space" style="height: 20px"></div>
+
+    <div class="btn-center">
+      <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;margin-bottom: 25px; margin-top: 20px; border-radius: 15px;">
+        <a class="general btn3-size-btn btn-default btn3-shape- btn3-style- btn3-color- btn btn-default"
+          href="menu.html" title="">Explore Our Menu</a>
+      </button>
+    </div>
+  </div>
+
+  <div class="empty_space" style="height: 35px"></div>
+
+
+  <div class="text-center">
+    <div class="column-content" style="background-color: white;">
+      <h1 style="text-align: 
+          canter;margin-top:30px;margin-bottom: -30px; color: rgb(0, 0, 0);margin-right: 70px;">Kenapa Harus
+        Menggunakan Aplikasi?
+      </h1>
+      <div class="empty_space" style="height: 15px"></div>
+      <div>
+        <p
+          style="text-align:center; color: rgba(53, 52, 52, 0.425); font-size: medium;font-family: 'Playfair Display SC', serif;">
+          Seiring perkembangan teknologi,
+          kami ingin memberikan pengalaman kepada kalian dengan mudah, hemat dan menyenangkan dalam menikmati kopi.
+        </p>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="apps carousel-inner">
+          <img src="aplicationcoffe1.jpg" class="gambar_hp d-block mx-auto img-fluid" alt="gamnbar apps"
+            style="height: 80vh; border-radius: 30px; width: 98%;">
+
+          <div class="carousel-item active">
+            <div class="carousel-caption d-md-block">
+              <h2 class="text1">Promotion</h2>
+              <p class="text2">Kami mau kalian selalu mendapatkan yang terbaik dari produk kami. kalian akan banyak
+                mendapatkan harga promo dari aplikasi coffeeshop</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-md-block">
+              <h2 class="text1">Delivery</h2>
+              <p class="text2">Sibuk dengan pekerjaan dan tidak bisa untuk keluar rumah? Kalian bisa memanfaatkan
+                pengrimin yang cepat dan mudah dalam 1 genggaman.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-md-block">
+              <h2 class="text1">Pick Up</h2>
+              <p class="text2">Malas mengantri? order lewat aplikasi dan langsung ambil orderan kamu di toko kami
+                didekat kamu tanpa antri.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="btn-center" style="background-color: white;">
+      <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;margin-bottom: 25px; margin-top: 20px; border-radius: 15px;">
+        <a class="general btn3-size-btn btn-default btn3-shape- btn3-style- btn3-color- btn btn-default"
+          href="apps.html" title="">Download Now</a>
+      </button>
+    </div>
+  </div>
+
+  <div class="empty_space" style="height: 40px"></div>
+
+  <!-- Card slider -->
+  <div class="text-center">
+    <div class="column-content" style="background-color: white;">
+      <h1 style="text-align: 
+          canter;margin-top:30px;margin-bottom: -30px; color: rgb(0, 0, 0);margin-right: 70px;">Coffee News
+      </h1>
+      <div class="empty_space" style="height: 15px"></div>
+      <div>
+        <p
+          style="text-align:center; color: rgba(53, 52, 52, 0.425); font-size: large; font-family:'Playfair Display SC', serif;">
+          Dapatkan berita update seputar kopi dan tentang pengalaman dari Coffee Shop kami.
+        </p>
+      </div>
+
+      <div class="empty_space" style="height: 18px"></div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card d-block mx-auto img-fluid" style="width: 18em;">
+            <img src="newscoffee1.jpg" class="card-img-top d-block mx-auto img-fluid" style="height: 357px;" alt="...">
+            <div class="card-body1">
+              <h5 class="card-title">Manfaat Minum Kopi di Pagi Hari.</h5>
+
+              <a href="#" class="btn btn-primary">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card d-block mx-auto img-fluid" style="width: 18rem;">
+            <img src="newscoffee2.jpg" class="card-img-top d-block mx-auto img-fluid" style="height: 357px;" alt="...">
+            <div class="card-body1">
+              <h5 class="card-title">Berbagai Macam Teknik Dalam Menyeduh Kopi.
+              </h5>
+              <a href="#" class="btn btn-primary">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card d-block mx-auto img-fluid" style="width: 18rem;">
+            <img src="newscoffee3.jpg" class="card-img-top d-block mx-auto img-fluid" style="height: 357px;" alt="...">
+            <div class="card-body1">
+              <h5 class="card-title">Mengenal Perbedaan Biji Kopi Arabika & Robusta.</h5>
+              <a href="#" class="btn btn-primary">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card d-block mx-auto img-fluid" style="width: 18rem;">
+            <img src="newscoffee4.jpg" class="card-img-top d-block mx-auto img-fluid" style="height: 357px;" alt="...">
+            <div class="card-body1">
+              <h5 class="card-title">Para Pecinta Kopi Wajib Tahu 4 varian Black Coffee</h5>
+              <a href="#" class="btn btn-primary">Read More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card slider end -->
+
+      <div class="empty_space" style="height: 40px"></div>
+
+      <!-- footer -->
+      <footer class="footer bg-white" style="border-radius:30px;">
+        <!-- footer left -->
+        <div class="footer-left">
+          <h3>Payment Method (Credit Cards) :</h3>
+          <div class="Credit-card">
+            <img src="visa.png" alt="">
+            <img src="mastercard.png" alt="">
+            <img src="paypal.png" alt="">
+          </div>
+          <br />
+          <br />
+          <div class="e-wallet">
+            <h3>E-Wallet :</h3>
+            <img src="gopay.png" alt="">
+            <img src="ovo.png" alt=""></img>
+            <img src="dana4.png" alt=""></img>
+            <img src="ShopeePay.png" alt=""></img>
+            <img src="LinkAja.png" alt=""></img>
+            <img src="QRIS.png" alt=""></img>
+          </div>
+
+        </div>
+
+        <!-- foter center -->
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Indonesia</span>Kalimantan Tengah, Palangka Raya</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+62 851-5957-2411</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#">fransiscusxbl@gmail.com</a></p>
+          </div>
+
+        </div>
+
+        <!-- footer right -->
+        <div class="footer-right">
+          <p class="footer-about">
+            <span>PT Coffee Shop Indonesia</span>
+            Jl. Gagak I No.233, Palangka Raya, kalimantan Tengah.
+          </p>
+
+          <div class="footer-media">
+            <a href="https://www.youtube.com/channel/UC5tef5RMzyq1VvabpwUbzuQ"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.facebook.com/fransiskus.bangun.9"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/fransiscusbangun/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/fransiscus-xaverius-bangun-laksono-341929210/"><i
+                class="fa fa-linkedin"></i></a>
+          </div>
+          <p class="footer-copyright">© 2022 RekaBangun Coffee, All Right Reserved</p>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <script type="application/javascript">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
